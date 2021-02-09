@@ -5,7 +5,7 @@
 
 function [distance] = primitive_distance_generator(steering_angle,wheelbase,resolution)
 
-max_dist = 5.0; %tested up tp 2.0m
+max_dist = 5.0;
 numberOfIntermediatePose = 10;
 
 steering_angle_max = steering_angle*pi/180; % in radiants
