@@ -25,7 +25,7 @@ addpath('ebertolazzi-G1fitting-a338d59/G1fitting')
 [X Y] = pointsOnClothoid( p1(1), p1(2), p1(3), k, dk, L, N);
 
 
-for t = 0:N-3   % 0:N-1 original  % 0:N-4 more reduced 
+for t = 0:N-1   % 0:N-1 original  % 0:N-4 more reduced 
     [Xvalue,Yvalue,TH,curvature] = evalClothoid( p1(1), p1(2), p1(3), k, dk, (t*L/(N-1)));
     if (abs(1/curvature) < minimum_radius)
         check = false;
